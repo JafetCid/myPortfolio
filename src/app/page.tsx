@@ -262,7 +262,7 @@ export default function Home() {
         id="formContact" className="flex w-full px-10 justify-center items-center min-h-screen">
         <div className="flex flex-col w-auto p-5 rounded-xl bg-white/10 md:w-1/2 xl:w-1/3">
           <h2 className="mb-10 font-extrabold text-center text-4xl md:text-5xl bg-gradient-to-r from-sky-500 to-blue-800 bg-clip-text text-transparent">Contacto</h2>
-          <form onSubmit={handleSubmit} action="https://formsubmit.co/21c27f12570808278ecc4398a7f54aea" method="POST" className="space-y-4">
+          <form onSubmit={handleSubmit} action={`https://formsubmit.co/21c27f12570808278ecc4398a7f54aea${basePath}`} method="POST" className="space-y-4">
             <div className="relative">
               <input
                 type="text"

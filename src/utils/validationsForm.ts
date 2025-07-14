@@ -29,8 +29,8 @@ export const validationsForm = (formData: FormData) => {
         errors.email = "El correo es obligatorio";
     } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email)) {
         errors.email = "Correo inválido";
-    } else if (formData.email.length < 20) {
-        errors.email = "El correo no puede contener menos de 20 caracteres";
+    } else if (formData.email.length < 15) {
+        errors.email = "El correo no puede contener menos de 15 caracteres";
     } else if (formData.email.length > 40) {
         errors.email = "El correo no puede contener más de 40 caracteres";
     }
