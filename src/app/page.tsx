@@ -18,7 +18,7 @@ type FormData = {
   message: string;
 };
 
-const basePath = process.env.NODE_ENV === 'production' ? '/mi-repo' : '';
+const basePath = process.env.NODE_ENV === 'production' ? '/myPortfolio' : '';
 
 export default function Home() {
 

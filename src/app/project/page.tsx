@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
 
-const basePath = process.env.NODE_ENV === 'production' ? '/mi-repo' : '';
+const basePath = process.env.NODE_ENV === 'production' ? '/myPortfolio' : '';
 
 export default function Project() {
   return (
