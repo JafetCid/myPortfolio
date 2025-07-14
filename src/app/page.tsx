@@ -18,6 +18,8 @@ type FormData = {
   message: string;
 };
 
+const basePath = process.env.NODE_ENV === 'production' ? '/mi-repo' : '';
+
 export default function Home() {
 
   const [formData, setFormData] = useState<FormData>({ name: "", email: "", message: "" });
@@ -30,7 +32,7 @@ export default function Home() {
     {
       id: "1",
       title: "Aplicaión Web para Gestión de Inventario",
-      img: <img src="/inventory.png" alt="inventory" />,
+      img: <img src={`${basePath}/inventory.png`} alt="inventory" />,
       description: "Aplicación web desarrollada con Next.js y Tailwind CSS, enfocada en la gestión de inventario. Permite centralizar y automatizar el control de productos y recursos, optimizando los procesos internos y brindando soporte a una toma de decisiones más ágil y precisa.",
       route: "/project",
     },
@@ -161,7 +163,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeIn" }}
-          src="/developer.svg" alt="img" className="w-96 md:w-72 lg:w-96" />
+          src={`${basePath}/developer.svg`} alt="img" className="w-96 md:w-72 lg:w-96" />
       </main>
 
       <section id="aboutMe" className="flex flex-col gap-10 justify-center items-center min-h-screen lg:flex-row">
@@ -189,7 +191,7 @@ export default function Home() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeIn" }}
           viewport={{ once: true, amount: 0.5 }} // activa solo una vez al estar al 50% en pantalla
-          src="/man-developing-website-on-desk.svg" alt="" className="w-96" />
+          src={`${basePath}/man-developing-website-on-desk.svg`} alt="" className="w-96" />
       </section>
 
       <motion.section

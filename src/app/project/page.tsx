@@ -3,6 +3,8 @@ import React from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
 
+const basePath = process.env.NODE_ENV === 'production' ? '/mi-repo' : '';
+
 export default function Project() {
   return (
     <div>
@@ -38,10 +40,10 @@ export default function Project() {
       <div id="images" className="flex px-10 pt-20 mb-20 justify-center items-center min-h-screen">
         <div className="flex flex-col gap-10 items-center">
           <img
-            src="/inventory.png" alt="" className="w-auto object-contain md:w-96 lg:w-1/2" />
+            src={`${basePath}/inventory.png`} alt="" className="w-auto object-contain md:w-96 lg:w-1/2" />
           <div className="flex flex-col lg:flex-row justify-center gap-10">
-            <img src="/inventory-responsive.png" alt="" className="w-auto object-contain md:w-96 lg:w-1/2" />
-            <img src="/inventory-responsive-movil.png" alt="" className="w-auto object-contain md:w-96" />
+            <img src={`${basePath}/inventory-responsive.png`} alt="" className="w-auto object-contain md:w-96 lg:w-1/2" />
+            <img src={`${basePath}/inventory-responsive-movil.png`} alt="" className="w-auto object-contain md:w-96" />
           </div>
         </div>
       </div>
