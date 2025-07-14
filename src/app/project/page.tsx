@@ -8,7 +8,7 @@ const basePath = process.env.NODE_ENV === 'production' ? '/myPortfolio' : '';
 export default function Project() {
   return (
     <div>
-      <nav className="flex fixed w-full top-0 left-0 py-4 justify-between md:px-10 z-50">
+      <nav className="flex w-full top-0 left-0 py-4 justify-between md:!fixed md:px-10 z-50">
         <div className="flex items-center gap-3 pl-5 md:pl-0 md:gap-5">
           <i className="bi bi-code-slash text-white text-xl lg:text-2xl"></i>
           <h1 className="text-white font-bold text-xl lg:text-3xl">Jafet Cid</h1>

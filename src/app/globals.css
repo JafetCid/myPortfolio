@@ -30,10 +30,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* globals.css */
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0) inset !important;
-  -webkit-text-fill-color: #fff !important;
-  transition: background-color 5000s ease-in-out 0s;
-   border-bottom: 1px solid white;
-}
+/* .nav-Color {
+  background: linear-gradient(to right, rgb(0, 0, 0, 0.5), rgb(8, 14, 62, 0.5), rgb(0, 0, 0, 0.5));
+  backdrop-filter: blur(10px);
+} */

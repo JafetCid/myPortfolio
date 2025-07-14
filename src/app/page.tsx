@@ -110,7 +110,7 @@ export default function Home() {
 
   return (
     <>
-      <nav className="flex fixed w-full py-4 justify-between md:px-10 z-50">
+      <nav className="flex w-full py-4 justify-between md:!fixed md:px-10 z-50 nav-Color">
         <div className="flex items-center gap-3 pl-5 md:pl-0 md:gap-5">
           <i className="bi bi-code-slash text-white text-xl lg:text-2xl"></i>
           <h1 className="text-white font-bold text-xl lg:text-3xl">Jafet Cid</h1>
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <main id="home" className="flex flex-col pt-20 px-5 gap-10 justify-around items-center md:flex-row min-h-screen">
+      <main id="home" className="flex flex-col mb-10 pt-20 px-5 gap-10 justify-around items-center md:flex-row min-h-screen">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -166,7 +166,7 @@ export default function Home() {
           src={`${basePath}/developer.svg`} alt="img" className="w-96 md:w-72 lg:w-96" />
       </main>
 
-      <section id="aboutMe" className="flex flex-col gap-10 justify-center items-center min-h-screen lg:flex-row">
+      <section id="aboutMe" className="flex flex-col mb-10 gap-10 justify-center items-center min-h-screen lg:flex-row">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -195,11 +195,11 @@ export default function Home() {
       </section>
 
       <motion.section
-        initial={{ opacity: 0, x: -40 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeIn" }}
-        viewport={{ once: true, amount: 0.5 }} // activa solo una vez al estar al 50% en pantalla
-        id="project" className="flex flex-col pt-20 gap-5 justify-center items-center min-h-screen">
+        viewport={{ once: true, amount: 0.2 }} // activa solo una vez al estar al 50% en pantalla
+        id="project" className="flex flex-col mb-10 pt-20 gap-5 justify-center items-center min-h-screen">
         <div className="px-10 lg:w-2/3">
           <h2 className="font-extrabold mb-10 text-center text-4xl md:text-5xl">Proyectos</h2>
         </div>
@@ -243,7 +243,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeIn" }}
         viewport={{ once: true, amount: 0.5 }} // activa solo una vez al estar al 50% en pantalla
-        id="contact" className="flex flex-col px-10 gap-5 justify-center items-center min-h-screen">
+        id="contact" className="flex flex-col mb-10 px-10 gap-5 justify-center items-center min-h-screen">
         <div className="flex flex-col justify-center items-center w-auto">
           <h2 className="mb-8 font-extrabold text-center text-4xl md:text-5xl">¿Te gustaría hablar?</h2>
           <p className="text-center md:text-lg">Actualmente estoy en búsqueda de nuevas oportunidades</p>
@@ -259,7 +259,7 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeIn" }}
         viewport={{ once: true, amount: 0.5 }} // activa solo una vez al estar al 50% en pantalla
-        id="formContact" className="flex w-full px-10 justify-center items-center min-h-screen">
+        id="formContact" className="flex w-full mb-10 px-10 justify-center items-center min-h-screen">
         <div className="flex flex-col w-auto p-5 rounded-xl bg-white/10 md:w-1/2 xl:w-1/3">
           <h2 className="mb-10 font-extrabold text-center text-4xl md:text-5xl bg-gradient-to-r from-sky-500 to-blue-800 bg-clip-text text-transparent">Contacto</h2>
           <form onSubmit={handleSubmit} action={`https://formsubmit.co/21c27f12570808278ecc4398a7f54aea${basePath}`} method="POST" className="space-y-4">
