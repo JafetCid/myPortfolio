@@ -156,7 +156,7 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, ease: "easeIn" }}
           >
-            <a href="/files/JafetCidGalicia-CV.pdf" download className="cursor-pointer border-1 border-white rounded-2xl px-5 py-1 transition-transform duration-300 hover:-translate-y-1">Dowload CV <i className="bi bi-download"></i></a>
+            <a href={`${basePath}/files/JafetCidGalicia-CV.pdf`} download className="cursor-pointer border-1 border-white rounded-2xl px-5 py-1 transition-transform duration-300 hover:-translate-y-1">Dowload CV <i className="bi bi-download"></i></a>
           </motion.div>
         </motion.div>
         <motion.img
