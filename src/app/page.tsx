@@ -244,7 +244,7 @@ export default function Home() {
         id="contact" className="flex flex-col px-10 gap-5 justify-center items-center min-h-screen">
         <div className="flex flex-col justify-center items-center w-auto">
           <h2 className="mb-8 font-extrabold text-center text-4xl md:text-5xl">¿Te gustaría hablar?</h2>
-          <p className="text-center md:text-lg">Actualmente estoy en búsqueda de nuevas oportunidades.</p>
+          <p className="text-center md:text-lg">Actualmente estoy en búsqueda de nuevas oportunidades</p>
           <p className="text-center md:text-lg">Estoy buscando integrarme a un equipo donde pueda crecer y contribuir con mis conocimientos.</p>
           <p className="mb-1 text-center italic md:text-lg">{displayedText}|</p>
           <a href="#images" className="mb-5 text-center md:text-lg">Contactar</a>
