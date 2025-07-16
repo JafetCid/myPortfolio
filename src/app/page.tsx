@@ -323,10 +323,10 @@ export default function Home() {
         </p>
         <p className="mb-3 text-center">Desarrollado por Jafet Cid Galicia</p>
         <p className="text-xs text-gray-500 text-center">
-          <a href="https://iconscout.com/illustrations/desarrollador" target="_blank" rel="noopener noreferrer" className="underline">
+          <a href="https://iconscout.com/free-illustration/developer-2080968_1750498" target="_blank" rel="noopener noreferrer" className="underline">
             Desarrollador
           </a> por
-          <a href="https://iconscout.com/es/contributors/manypixels-gallery/:assets" target="_blank" rel="noopener noreferrer" className="underline ml-1">
+          <a href="https://iconscout.com/contributors/manypixels-gallery" target="_blank" rel="noopener noreferrer" className="underline ml-1">
             Manypixels Gallery
           </a> en
           <a href="https://iconscout.com" target="_blank" rel="noopener noreferrer" className="underline ml-1">
@@ -337,10 +337,10 @@ export default function Home() {
           </a>
         </p>
         <p className="mb-2 text-xs text-gray-500 text-center">
-          <a href="https://iconscout.com/illustrations/hombre" target="_blank" rel="noopener noreferrer" className="underline">
+          <a href="https://iconscout.com/es/free-illustration/hombre-desarrollando-sitio-web-en-escritorio-2040889_1721885" target="_blank" rel="noopener noreferrer" className="underline">
             Hombre desarrollando sitio web en el escritorio
           </a> por
-          <a href="https://iconscout.com/es/contributors/woobrodesign/:assets" target="_blank" rel="noopener noreferrer" className="underline ml-1">
+          <a href="https://iconscout.com/contributors/woobrodesign" target="_blank" rel="noopener noreferrer" className="underline ml-1">
             WOOBRO LTD
           </a> en
           <a href="https://iconscout.com" target="_blank" rel="noopener noreferrer" className="underline ml-1">

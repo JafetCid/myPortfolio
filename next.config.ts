@@ -5,9 +5,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
+  trailingSlash: true,
   // basePath: isProd ? '/mi-repo' : '',
   // assetPrefix: isProd ? '/mi-repo/' : '',
-  // trailingSlash: true,
 };
 
 export default nextConfig;
