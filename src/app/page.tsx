@@ -25,14 +25,14 @@ export default function Home() {
   const [formData, setFormData] = useState<FormData>({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [displayedText, setDisplayedText] = useState("");
-  const [index, setIndex] = useState(0);
   const [typing, setTyping] = useState(true);
+  const [index, setIndex] = useState(0);
 
   const Card = [
     {
       id: "1",
       title: "Aplicaión Web para Gestión de Inventario",
-      img: <img src={`${basePath}/inventory.png`} alt="inventory" />,
+      img: <img src={`${basePath}/inventory.png`} alt="inventory" className="h-full" />,
       description: "Aplicación web desarrollada con Next.js y Tailwind CSS, enfocada en la gestión de inventario. Permite centralizar y automatizar el control de productos y recursos, optimizando los procesos internos y brindando soporte a una toma de decisiones más ágil y precisa.",
       route: "/project",
     },
@@ -90,7 +90,7 @@ export default function Home() {
       ...prev,
       [field]: value
     }));
-  }
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Evita el envío por defecto
