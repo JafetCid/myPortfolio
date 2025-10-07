@@ -38,9 +38,12 @@ export default function Home() {
     },
     {
       id: "2",
-      title: "En proceso...",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.",
-      route: "#",
+      title: "Aplicación móvil DentalHealth",
+      img: <div className="flex justify-center"><img src={`${basePath}/dental/Ellipse.svg`} alt="inventory"/></div>,
+      description: `Aplicación móvil desarrollada con React Native y TypeScript como proyecto escolar.
+        Su objetivo fue facilitar la gestión de citas y la comunicación entre el consultorio y los clientes, mejorando la eficiencia operativa y la satisfacción del usuario.
+        El proyecto incluyó consumo de API mediante Fetch para la obtención y envío de datos en tiempo real.`,
+      route: "/project-dental",
     },
     {
       id: "3",
@@ -123,7 +126,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <main id="home" className="flex flex-col mb-10 pt-20 px-5 gap-10 justify-around items-center md:flex-row min-h-screen">
+      <main id="home" className="flex flex-col mb-10 px-5 gap-10 justify-around items-center md:flex-row min-h-screen">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
@@ -312,45 +315,6 @@ export default function Home() {
         </div>
       </motion.div>
       <div className="mb-5 h-px bg-gradient-to-r from-transparent via-white to-transparent"></div>
-
-      <footer className="relative px-10">
-        <div className="flex gap-3 justify-center items-center">
-          <a href="https://github.com/JafetCid" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-all duration-300 hover:-translate-y-1"><i className="bi bi-github text-2xl"></i></a>
-          <a href="mailto:jafetcid9@gmail.com" target="_blank" rel="noopener noreferrer" className="cursor-pointer transition-all duration-300 hover:-translate-y-1"><i className="bi bi-envelope-fill text-2xl"></i></a>
-        </div>
-        <p className="text-center w-full">
-          © 2025 JafetCid - Todos los derechos reservados.
-        </p>
-        <p className="mb-3 text-center">Desarrollado por Jafet Cid Galicia</p>
-        <p className="text-xs text-gray-500 text-center">
-          <a href="https://iconscout.com/free-illustration/developer-2080968_1750498" target="_blank" rel="noopener noreferrer" className="underline">
-            Desarrollador
-          </a> por
-          <a href="https://iconscout.com/contributors/manypixels-gallery" target="_blank" rel="noopener noreferrer" className="underline ml-1">
-            Manypixels Gallery
-          </a> en
-          <a href="https://iconscout.com" target="_blank" rel="noopener noreferrer" className="underline ml-1">
-            IconScout
-          </a> –
-          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" className="underline ml-1">
-            Licencia CC BY 4.0
-          </a>
-        </p>
-        <p className="mb-2 text-xs text-gray-500 text-center">
-          <a href="https://iconscout.com/es/free-illustration/hombre-desarrollando-sitio-web-en-escritorio-2040889_1721885" target="_blank" rel="noopener noreferrer" className="underline">
-            Hombre desarrollando sitio web en el escritorio
-          </a> por
-          <a href="https://iconscout.com/contributors/woobrodesign" target="_blank" rel="noopener noreferrer" className="underline ml-1">
-            WOOBRO LTD
-          </a> en
-          <a href="https://iconscout.com" target="_blank" rel="noopener noreferrer" className="underline ml-1">
-            IconScout
-          </a> –
-          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" className="underline ml-1">
-            Licencia CC BY 4.0
-          </a>
-        </p>
-      </footer>
     </>
   );
 }
