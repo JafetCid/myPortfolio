@@ -14,7 +14,7 @@ export default function Dental () {
                 initial={{ opacity: 0, y: -40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeIn" }}
-                className="flex flex-col px-10 gap-2 justify-center items-center text-white h-screen border-2">
+                className="flex flex-col px-10 gap-2 justify-center items-center text-white h-screen">
                 <h2 className="mb-3 font-extrabold text-center text-4xl md:text-5xl">Aplicación Móvil DentalHealth</h2>
                 <p className="xl:w-1/2 text-center md:text-lg">
                     Esta aplicación fue diseñada para optimizar la administración y comunicación dentro de un consultorio dental,
