@@ -14,7 +14,7 @@ export default function Project() {
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeIn" }}
-        className="flex flex-col px-10 gap-2 justify-center items-center text-white min-h-screen">
+        className="flex flex-col px-10 gap-2 justify-center items-center text-white h-screen">
         <h2 className="mb-3 font-extrabold text-center text-4xl md:text-5xl">Aplicación Web para Gestión de Inventario</h2>
         <p className="xl:w-1/2 text-center md:text-lg">
           Esta aplicación web fue desarrollada con Next.js y Tailwind CSS, enfocada en la gestión de inventario.
