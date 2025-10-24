@@ -38,8 +38,8 @@ export default function Dental () {
                         <img src={`${basePath}/dental/Inicio.jpeg`} alt="Inicio" />
                         <img src={`${basePath}/dental/Login.jpeg`} alt="Login" />
                         <img src={`${basePath}/dental/Home.jpeg`} alt="Home" />
-                        <img src={`${basePath}/dental/Perfil.jpeg`} alt="Perfil" />
                         <img src={`${basePath}/dental/Agendar-Cita.jpeg`} alt="Agendar cita" />
+                        {/* <img src={`${basePath}/dental/Perfil.jpeg`} alt="Perfil" /> */}
                     </div>
                 </div>
             </div>
