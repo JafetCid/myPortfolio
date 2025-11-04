@@ -9,7 +9,7 @@ export default function ProjectsNavbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
-            className="fixed w-full py-5 text-black bg-white md:px-16 z-10">
+            className="fixed w-full py-5 px-5 text-black bg-white md:px-16 z-10">
             <div className="flex justify-between">
                 <div className="flex items-center">
                     <h1 className="font-bold text-xl lg:text-2xl">Jafet Cid</h1>
