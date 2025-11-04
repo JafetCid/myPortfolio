@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  output: "export",
+  // output: "export",
   trailingSlash: true,
   // basePath: isProd ? '/mi-repo' : '',
   // assetPrefix: isProd ? '/mi-repo/' : '',
